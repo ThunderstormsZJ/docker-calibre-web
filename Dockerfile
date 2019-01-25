@@ -108,6 +108,7 @@ RUN \
     apk -U add --no-cache $PKG_DEV $PKG_PYTHON $PKG_IMAGES_DEV $PKG_IMAGES && \
 
     # install additional python packages:
+    pip install --upgrade pip
     pip --no-cache-dir install --upgrade \
       pip setuptools pyopenssl \
     ### REQUIRED ###
